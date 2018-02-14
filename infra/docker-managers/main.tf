@@ -23,7 +23,7 @@ resource "aws_instance" "docker-managers" {
   associate_public_ip_address = true
 
   #    user_data                   = "${data.template_file.rendered}"
-  iam_instance_profile = "${aws_iam_instance_profile.playground.name}"
+  iam_instance_profile = "${var.ec2_instance_profile}"
 
   tags {
     Name        = "pg-dckr-mgr-${count.index + 1}/${var.managers_to_run}"
