@@ -1,7 +1,7 @@
 resource "aws_security_group" "docker_ports" {
   name        = "docker_ports"
   description = "Allow docker control plane traffic"
-  vpc_id      = "${var.aws_vpc_id}"
+  vpc_id      = "${module.vpc.vpc_id}"
 
   ingress {
     from_port = 2376

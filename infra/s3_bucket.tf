@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "docker_join_tokens" {
   acl = "private"
+  force_destroy = true
 
   tags {
     Owner       = "${local.owner_name}"

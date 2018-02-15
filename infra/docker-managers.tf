@@ -6,4 +6,5 @@ module "docker-managers" {
   aws_subnet_id        = "${module.vpc.public_subnets[0]}"
   ec2_instance_profile = "${aws_iam_instance_profile.playground.name}"
   s3_bucket            = "${aws_s3_bucket.docker_join_tokens.id}"
+  ec2_security_group   = "${aws_security_group.docker_ports.id}"
 }

@@ -13,3 +13,4 @@ variable "aws_subnet_id" {}
 variable "name_of_the_kid" {}
 variable "owner_name" {}
 variable "s3_bucket" {}
+variable "ec2_security_group" {}
