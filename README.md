@@ -1,9 +1,7 @@
 # README
 
-
 * `content` folder is to hold your playground content you'll use during the presentation
 * `infrastructure` folder have a terraform script to deploy the audience instances
-
 
 ## Provision infrastructure
 
