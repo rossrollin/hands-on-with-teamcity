@@ -12,6 +12,13 @@ variable "key_name" {}
 variable "inst_base_name" {
     default = "pg18"
 }
+variable "ssh_user" {
+    default = "playground"
+}
+
+variable "ssh_password" {
+    default = "PeoplesComputers1"
+}
 
 variable "aws_region" {
     default = "eu-west-1"

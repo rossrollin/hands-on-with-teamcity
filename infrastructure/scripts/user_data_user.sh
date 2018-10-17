@@ -23,14 +23,14 @@ stop on shutdown
 respawn
 respawn limit 20 5
 
-exec sudo -u root /usr/local/bin/wetty -p 3000 --sshuser playground
+exec sudo -u root /usr/local/bin/wetty -p 3000 --sshuser ${ssh_user}
 EOC
 
 sudo start wetty  
 
 # Create new user, edit ssh settings
-sudo adduser playground 
-echo 'PeoplesComputers1' | sudo passwd playground --stdin
+sudo adduser ${ssh_user} 
+echo '${ssh_pass}' | sudo passwd ${ssh_user} --stdin
 sudo sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 
 sudo service sshd reload
