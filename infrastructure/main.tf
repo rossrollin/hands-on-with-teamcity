@@ -20,6 +20,8 @@ data "template_file" "user_data_user" {
   vars {
     hostname = "${var.inst_base_name}-${count.index}"
     count    = "${count.index}" 
+    ssh_user = "${var.ssh_user}"
+    ssh_pass = "${var.ssh_password}"
   }
 }
 

@@ -13,10 +13,12 @@ vpc_subnet_id = "subnet-aa53f3f2"
 key_name = "dan2test"
 aws_region = "eu-west-1"
 r53_zone_id = "ZHQ86ZHWMXO1D"
+inst_base_name = "mytraining"
+ssh_user = "playground"
+ssh_password = "PeoplesComputers1"
 ```
 
 Note: The `r53_zone_id` points to **devopsplayground.com**, so your domain name for the instance will be `<animal>.devopsplayground.com`.  
-Note2: Right now the WebTTY (wetty) is executed as part of a user_data script, and if you restart the instance it won't restart (PR-s welcome)
 
 ```bash
 cd infrastructure
