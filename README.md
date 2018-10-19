@@ -13,9 +13,9 @@ vpc_subnet_id = "subnet-aa53f3f2"
 key_name = "dan2test"
 aws_region = "eu-west-1"
 r53_zone_id = "ZHQ86ZHWMXO1D"
-inst_base_name = "mytraining"
-ssh_user = "playground"
-ssh_password = "PeoplesComputers1"
+inst_base_name = "mytraining" # optional
+ssh_user = "playground" #optional
+ssh_password = "PeoplesComputers1" #optional
 ```
 
 Note: The `r53_zone_id` points to **devopsplayground.com**, so your domain name for the instance will be `<animal>.devopsplayground.com`.  

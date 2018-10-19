@@ -10,7 +10,7 @@ variable "instance_type" {
 }
 variable "key_name" {}
 variable "inst_base_name" {
-    default = "pg18"
+    default = "mytraining"
 }
 variable "ssh_user" {
     default = "playground"
