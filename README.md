@@ -14,11 +14,13 @@ key_name = "dan2test"
 aws_region = "eu-west-1"
 r53_zone_id = "ZHQ86ZHWMXO1D"
 inst_base_name = "mytraining" # optional
-ssh_user = "playground" #optional
-ssh_password = "PeoplesComputers1" #optional
+ssh_user = "playground" # optional
+ssh_password = "PeoplesComputers1" # optional
 ```
 
-Note: The `r53_zone_id` points to **devopsplayground.com**, so your domain name for the instance will be `<animal>.devopsplayground.com`.  
+**Notes**<br />
+1. The `r53_zone_id` points to **devopsplayground.com**, so your domain name for the instance will be `<animal>.devopsplayground.com`.
+2. The framework is expecting the following resources to already exist and the values to line up with those resources: vpc_id, vpc_subnet_id, key_name, aws_region. r53_zone_id. The other parameters are generted by the script using the values provided and so don't need to exit beforehand.
 
 ```bash
 cd infrastructure
