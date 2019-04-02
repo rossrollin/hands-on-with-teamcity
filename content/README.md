@@ -18,7 +18,7 @@
 
 In this playground we will be getting you up and running with TeamCity
 
-**Name:** Ross Williams </br >
+**Name:** Ross Williams <br />
 **Role:** DevOps And Continuous Delivery Consultant  
 **Email:** ross.williams@ecs-digital.co.uk 
 
