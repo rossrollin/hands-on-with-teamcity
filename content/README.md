@@ -1,6 +1,6 @@
 # DevOps Playground London: Hands-on with TeamCity
 
-<img src='../_images/teamcity-post-banner.png'>
+<img src='_images/teamcity-post-banner.jpg'>
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
